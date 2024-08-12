@@ -6,8 +6,8 @@ pipeline{
 	tools{
 		jdk 'java-17'
 	}
-	stages('Build'){
-		stage{
+	stages{
+		stage('Build'){
 			steps{
 				bat "mvn clean install -DskipTests"
 			}
