@@ -9,7 +9,7 @@ pipeline{
 	stages{
 		stage('Build'){
 			steps{
-				bat 'echo "Building in progress"'
+				bat 'echo "Building in progress via webhook"'
 				bat "mvn clean install -DskipTests"
 			}
 		}
