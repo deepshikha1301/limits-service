@@ -10,7 +10,7 @@ pipeline{
 		stage('Build'){
 			steps{
 				bat 'echo "Building in progress via webhook1"'
-				bat "C:/Users/deeps/apache-maven-3.8.6/bin mvn clean install -DskipTests"
+				bat "mvn clean install -DskipTests"
 			}
 		}
 		stage('Test'){
